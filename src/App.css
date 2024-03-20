@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+.hederr {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.create-btn {
+  background-color: blue;
+  color: azure;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.post {
+  left: 10px;
   display: flex;
   flex-direction: column;
+  width: 310px;
+  height: 290px;
+  background-color: lightblue;
+  position: relative;
+  margin-bottom: 10px;
+}
+.post-edit {
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  height: 250px;
+  background-color: lightblue;
+  position: relative;
+}
+.post-header {
+  margin-top: 10px;
+  margin-left: 5px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(174, 194, 194);
+  width: 300px;
+}
+.post-header-edit {
+  margin-top: 10px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(174, 194, 194);
+  width: 400px;
+}
+.headOfHeader {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+}
+.post-body {
+  width: 100%;
+  margin: 0;
+  margin-top: 3px;
+  padding: 3px;
+}
+.post-body:hover {
+  margin: 0;
+  margin-top: 3px;
+  padding: 3px;
+  background-color: cadetblue;
+  width: 95%;
+}
+.post-body textarea {
+  width: 80%;
+}
+.avatar {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: aquamarine;
+  width: 50px;
+  /* height: 50px; */
 }
 
-.App-link {
-  color: #61dafb;
+.who-main {
+  display: flex;
+  flex-direction: column;
+  width: 222px;
+}
+.who-main-edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.nameOf-edit + .nameOf-edit {
+  margin-left: 10px;
+}
+.nameOf,
+.nameOf-edit .who,
+.who-edit {
+  margin: 0;
+  width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nameOf,
+.nameOf-edit {
+  /* background-color: bisque; */
+  background-color: rgb(171, 184, 184);
+}
+
+.who,
+.who-edit {
+  /* background-color: antiquewhite; */
+  background-color: rgb(160, 175, 175);
+}
+
+.time {
+  color: grey;
+  font-size: smaller;
+}
+.usless-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background-color: darkolivegreen;
+  height: 30px;
+}
+.usless-btn button {
+  height: 20px;
+}
+.footer-btn {
+  display: flex;
+  justify-content: flex-end;
+
+  align-items: center;
+  height: 30px;
+}
+.footer-btn button {
+  height: 20px;
+  margin-right: 8px;
+}
+.post-content-edit {
+  margin: 10px;
+  width: 90%;
+  height: 100px;
+}
+.cancel {
+  top: -42px;
+  position: relative;
+}
+.homeland {
+  top: 0;
 }
